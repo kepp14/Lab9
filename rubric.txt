@@ -1,0 +1,10 @@
+Rubric for Lab 9:
+
+
++10: Get two different images on screen w/ background (2 dots, stick figures, etc)
++10: Have the two images be able to move separately with different buttons
++10: Get a health bar to show up on the screen for at least one image
++20: Have the dots be able to "punch" each other (may not be animated b/c sprites are still in development) if they are close enough
++10: Have punches take away from health of at least one image
++10: Have the images be able to kick
++10: Be able to choose a background (map) to fight on
