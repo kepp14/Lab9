@@ -1,0 +1,47 @@
+/*
+Kevin Epp  CSE 20212
+Lab 9  report.txt
+Report and time log for lab 9 
+*/
+
+Personal GitHub: github.com/kepp14
+Group Project GitHub: github.com/ozidar/MortalKombat
+
+***
+Compile by typing make and run by typing main
+***
+
+The program blob.cpp works internally by utilizing many SDL functions. The function
+load_image takes in a images location and optimizes it and returns a pointer to that
+image. The function apply_image takes in a pointer to an image and puts it onto the
+screen. The function init initializes the SDL screen and sets it up. The class Blob 
+keeps track of the position of the Blob and uploads the image to the screen using various
+functions. The main function starts by initializing the screen and creating an instance
+of the Blob class. It then loads the background image for the screen and enters a while 
+loop until the user quits. Main.cpp simply instantiates two instances of the Blob class 
+and goes through a while loop that checks if the user presses a key and if the user presses
+an appropriate key (depending on whether it is player 1 or 2), it will move the dot on the 
+screen accordingly or make an attack attempt at the other player. When it quits, the program
+frees the images in memory so there isn't a memory leak.
+
+I verified the program by playing with it and pressing random keys to make sure that
+it did what I expected it to. The program isn't too complicated, so as long as the 
+images set right, it worked fine.
+
+In terms of my rubric for this week (rubric.txt), I completed all of the tasks on it for
+all 80 points. 
+
+TIME LOG:
+2 hours: Meeting with group members to discuss what needed to be done and to make major 
+	 decisions for the project (what backgrounds, characters to use)
+2 hours: Developing blob.h (figuring out how to do the health bars took awhile :( )
+3 hours: Getting main.cpp to correctly work and the images on the screen to do what was expected
+	 from them
+
+I think that I deserve the extra 20 points because I successfully completed all of my tasks, even 
+though they proved to be a much tougher challenge than I anticipated. I tried to get SDL_draw to 
+work for hours, but then I finally discovered the SDL_FillRect function, which made it much
+easier. Also, by completing my portion of the lab, we stand very close to completion. As soon as 
+character sprites and images are properly made, we can simply stick them in for the dots and have
+a functioning, albeit simple, game. From there, we can just add "special" features to the game to
+make it more and more enjoyable and complex.
